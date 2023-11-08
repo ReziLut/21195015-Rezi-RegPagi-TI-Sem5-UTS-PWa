@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem; }
+
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.5rem; }
+
+.subhead {
+  text-transform: uppercase;
+  font-size: 1.1rem; }
+
+.lead {
+  font-size: 1.1rem; }
+
+.justify {
+  text-align: justify; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  width: 100%; }
+
+header {
+  background: #5c5d6d;
+  color: #fdfdff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  header .header-box {
+    border: 4px solid #fdfdff;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .header-box img {
+      border-bottom: 3px solid #fdfdff;
+      padding-bottom: 10px; }
+
+main {
+  background: #fdfdff;
+  color: #393d3f;
+  padding: 3rem 0; }
+  main #left {
+    border-right: 4px solid #5c5d6d;
+    padding-right: 1rem; }
+    main #left ul {
+      padding: 8px 0; }
+      main #left ul li {
+        list-style-type: none;
+        padding: 5px 0; }
+    main #left #skills {
+      padding-top: 1rem; }
+      main #left #skills .stars {
+        display: flex; }
+        main #left #skills .stars img {
+          width: 0.8rem;
+          margin: 0 5px; }
+  main #right ul {
+    padding-top: 8px;
+    font-size: 1.1rem; }
+    main #right ul li {
+      list-style-position: inside;
+      padding: 2.5px 0 2px 2.5px; }
+  main #right #employment-history .profile-element,
+  main #right #academic-qualifications .profile-element {
+    padding: 0.5rem 0; }
+    main #right #employment-history .profile-element .top,
+    main #right #academic-qualifications .profile-element .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline; }
+      main #right #employment-history .profile-element .top .title,
+      main #right #academic-qualifications .profile-element .top .title {
+        font-size: 1.25rem; }
+      main #right #employment-history .profile-element .top .location,
+      main #right #academic-qualifications .profile-element .top .location {
+        font-size: 1.1rem;
+        font-weight: normal; }
+
+@media screen and (max-width: 986px) {
+  .col-2 {
+    grid-template-columns: 1fr; }
+  main {
+    padding: 3rem 0; }
+    main #left {
+      border-right: 0;
+      padding: 0; } }
+
+@media screen and (max-width: 670px) {
+  .profile-element .top {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 400px) {
+  header .header-box {
+    max-width: 95%;
+    padding: 1rem 3rem; } }
+
+@media screen and (max-width: 300px) {
+  header .header-box {
+    max-width: 95%;
+    padding: 1rem 1rem; } }

@@ -1,0 +1,16 @@
+{
+  "name": "Say Hello",
+  "short_name": "Hello",
+  "icons": [{
+    "src": "img/cv.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white",
+  "permissions": ["notifications"] 
+
+}
